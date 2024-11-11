@@ -1,0 +1,138 @@
+// // General page styling
+// ion-content {
+//   --background: #f7f8fc;
+// }
+
+// // Centering and styling the form
+// form {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+//   margin-top: 20px;
+//   padding: 20px;
+//   border-radius: 12px;
+//   background: #ffffff;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// // Input field styling
+// ion-item {
+//   --border-radius: 8px;
+//   --background: #f0f2f5;
+//   --padding-start: 10px;
+//   --padding-end: 10px;
+// }
+
+// ion-label {
+//   color: #555;
+//   font-weight: bold;
+//   font-size: 0.9em;
+// }
+
+// ion-input {
+//   color: #333;
+// }
+
+// // Login button styling
+// ion-button {
+//   margin-top: 16px;
+//   --background: linear-gradient(90deg, #ff416c, #ff4b2b);
+//   --border-radius: 10px;
+//   color: white;
+//   font-weight: bold;
+//   font-size: 1em;
+//   box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+// }
+
+// // Link text styling
+// ion-text p {
+//   text-align: center;
+//   color: #555;
+//   font-size: 0.9em;
+// }
+
+// a {
+//   color: #ff416c;
+//   text-decoration: none;
+//   font-weight: bold;
+// }
+
+// // Background for the content
+// ion-content {
+//   --background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+// }
+
+// // Center the form and limit its width on larger screens
+// form {
+//   max-width: 400px;
+//   margin: auto;
+//   padding: 20px;
+//   background-color: white;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+// }
+
+// // Styling the input fields
+
+// // Styling the submit button
+ion-button {
+  // margin-top: 20px;
+  // // background: linear-gradient(135deg, #667eea, #764ba2);
+  // border-radius: 15px;
+  // color: white;
+  // font-weight: bold;
+  // --color: #59b88c
+  --border-radius: 12px;
+  --background: #59b88c;
+  // --border-color: #59b88c;
+  // --background-hover: #59b88c;
+  // --background-activated: #88f4be;
+  // --background-focused: #88f4be;
+}
+
+// ion-button[type="submit"]:hover {
+//   background: linear-gradient(135deg, #5862d6, #5d3c7c);
+// }
+
+// Styling for the login link
+ion-text p {
+  margin-top: 20px;
+  text-align: center;
+  color: #8d93ad;
+  font-size: 15px;
+}
+
+ion-text p a {
+  color: #59b88c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ion-text p a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #121713;
+}
+
+ion-input {
+  // --placeholder-color: red;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #555;
+  // border-bottom: none;
+}
+
+ion-item {
+  --border-bottom: none;
+  margin: 20px 0;
+}
+ion-checkbox {
+  color: #59b88c;
+}

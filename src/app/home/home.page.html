@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<!-- <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
@@ -23,4 +23,30 @@
       >
     </p>
   </div>
+</ion-content> -->
+<ion-content>
+  <ion-slides pager="true">
+    <ion-slide>
+      <img src="assets/images/slide1.jpg" alt="Slide 1" />
+      <h2>Welcome to the App</h2>
+      <p>Discover new features and stay connected!</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/images/slide2.jpg" alt="Slide 2" />
+      <h2>Stay Updated</h2>
+      <p>Get notified about important updates and news.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/images/slide3.jpg" alt="Slide 3" />
+      <h2>Join Us!</h2>
+      <p>Sign up now or log in to your account to get started.</p>
+
+      <ion-button expand="block" (click)="goToSignIn()">Sign In</ion-button>
+      <ion-button expand="block" fill="outline" (click)="goToSignUp()"
+        >Sign Up</ion-button
+      >
+    </ion-slide>
+  </ion-slides>
 </ion-content>

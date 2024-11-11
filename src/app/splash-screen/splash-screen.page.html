@@ -1,0 +1,95 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>splash-screen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">splash-screen</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+<!-- <ion-content>
+  <div class="splash-screen">
+    <div class="content">
+      <img
+        src="assets/images/book-image.svg"
+        alt="Book Image"
+        class="book-image"
+      />
+      <h2>Discounted Secondhand Books</h2>
+      <p>Used and near new secondhand books at great prices.</p>
+      <div class="indicator-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</ion-content> -->
+<!-- <ion-content>
+  <ion-slides [options]="slideOpts" pager="true">
+    <ion-slide> </ion-slide>
+
+    <ion-slide> </ion-slide>
+
+    <ion-slide> </ion-slide>
+
+    <ion-slide> </ion-slide>
+  </ion-slides>
+</ion-content> -->
+
+<ion-content>
+  <swiper-container
+    [pagination]="true"
+    [autoplay]="{
+    'delay': 3000,
+    'disableOnInteraction': false
+  }"
+  >
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Discounted <br /><span>Secondhand Books</span></h2>
+        <p>Used and near-new secondhand books at great prices.</p>
+        <img src="/assets/img/on_1.png" alt="Discounted Books" />
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>20 Book Grocers <br /><span>Nationally</span></h2>
+        <p>We've opened 20 stores across Australia.</p>
+        <img src="/assets/img/on_2.png" alt="20 Book Grocers Nationally" />
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="slide-content">
+        <h2>Sell or Recycle Your Old <br /><span>Books With Us</span></h2>
+        <p>
+          If you're looking to donate, sell, or recycle old books<br />
+          <span>, we can help.</span>
+        </p>
+        <img
+          class="box-image"
+          src="/assets/img/on_3.png"
+          alt="Sell or Recycle Books"
+        />
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="slide-content-lg-sp">
+        <div class="sign-in-up">
+          <h2>
+            Books For <br />
+            Every Taste
+          </h2>
+          <button routerLink="/login" class="sign-in">Sign In</button>
+          <button routerLink="/signup" class="sign-up">Sign Up</button>
+          <!-- <img src="/assets/img/on_3.png" alt="Sell or Recycle Books" /> -->
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

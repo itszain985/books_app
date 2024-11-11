@@ -1,0 +1,87 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-buttons slot="start">
+  <ion-back-button
+    style="color: #59b88c"
+    defaultHref="/splash-screen"
+  ></ion-back-button>
+</ion-buttons>
+
+<h1>Sign Up</h1>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSignup()">
+    <ion-item>
+      <!-- <ion-label position="floating">First & Last Name</ion-label> -->
+      <ion-input
+        placeholder="First & Last Name"
+        type="text"
+        required
+        [(ngModel)]="username"
+        name="username"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <!-- <ion-label position="floating">Email</ion-label> -->
+      <ion-input
+        placeholder="Email"
+        type="email"
+        required
+        [(ngModel)]="email"
+        name="email"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <!-- <ion-label position="floating">Mobile Phone</ion-label> -->
+      <ion-input
+        placeholder="Mobile Phone"
+        type="text"
+        required
+        [(ngModel)]="password"
+        name="password"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <!-- <ion-label position="floating">Password</ion-label> -->
+      <ion-input
+        placeholder="Password"
+        type="password"
+        required
+        [(ngModel)]="password"
+        name="password"
+      ></ion-input>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input
+        type="password"
+        required
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+      ></ion-input>
+    </ion-item> -->
+
+    <ion-item>
+      <ion-checkbox
+        [(ngModel)]="acceptTerms"
+        name="acceptTerms"
+        required
+      ></ion-checkbox>
+      <p>Please accept the terms and conditions</p>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Sign Up</ion-button>
+  </form>
+
+  <ion-text color="medium">
+    <p>Already have an account? <a routerLink="/login">Log In</a></p>
+  </ion-text>
+</ion-content>

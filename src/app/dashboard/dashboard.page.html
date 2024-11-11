@@ -1,0 +1,80 @@
+<ion-content>
+  <div class="div-img">
+    <h2>Over Top Picks</h2>
+    <div class="ion-page" id="main-content">
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </div>
+  </div>
+  <swiper-container
+    class="books-slider"
+    [autoplay]="{ 'delay': 3000, 'disableOnInteraction': false }"
+    [slidesPerView]="3"
+  >
+    <ng-container *ngFor="let books of data">
+      <swiper-slide>
+        <div class="slide-content">
+          <img
+            src="{{books.bookImg}}"
+            class="bookImage"
+            alt="Discounted Books"
+            routerLink="/book-detail"
+          />
+          <h2>{{books.bookName}}</h2>
+          <p>{{books.authName}}</p>
+        </div>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+
+  <div class="fam-section">
+    <h1>Best Famous books</h1>
+    <swiper-container
+      class="books-slider"
+      [autoplay]="{ 'delay': 3000, 'disableOnInteraction': false }"
+      [slidesPerView]="3"
+      routerLink="/book-detail"
+    >
+      <ng-container *ngFor="let books of data2">
+        <swiper-slide>
+          <div class="slide-content">
+            <img
+              src="{{books.bookImg}}"
+              class="bookImage"
+              alt="Discounted Books"
+            />
+            <h2>{{books.bookName}}</h2>
+            <p>{{books.authName}}</p>
+          </div>
+        </swiper-slide>
+      </ng-container>
+    </swiper-container>
+  </div>
+</ion-content>
+
+<ion-menu side="end" contentId="main-content">
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="footer-buttons">
+      <ion-button routerLink="/dashboard">
+        <ion-icon name="home-outline"></ion-icon>
+        <!-- <ion-label>Home</ion-label> -->
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+        <!-- <ion-label>Search</ion-label> -->
+      </ion-button>
+
+      <!-- Profile Icon -->
+      <ion-button>
+        <ion-icon name="person-outline"></ion-icon>
+        <!-- <ion-label>Profile</ion-label> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

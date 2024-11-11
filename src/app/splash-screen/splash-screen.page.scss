@@ -1,0 +1,116 @@
+// .splash-screen {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #e0f7ef;
+
+//   .content {
+//     text-align: center;
+
+//     .book-image {
+//       width: 150px;
+//       height: auto;
+//       margin-bottom: 20px;
+//     }
+
+//     h2 {
+//       font-size: 24px;
+//       color: #4caf50;
+//       margin: 0;
+//     }
+
+//     p {
+//       color: #9e9e9e;
+//       font-size: 14px;
+//       margin-top: 5px;
+//     }
+
+//     .indicator-dots {
+//       display: flex;
+//       justify-content: center;
+//       margin-top: 20px;
+
+//       .dot {
+//         width: 8px;
+//         height: 8px;
+//         margin: 0 4px;
+//         background-color: #c8e6c9;
+//         border-radius: 50%;
+//       }
+
+//       .dot.active {
+//         background-color: #4caf50;
+//       }
+//     }
+//   }
+// }
+.sign-in-up {
+  background-image: url("/assets/img/welcome_bg.png");
+  height: 530px;
+  width: 420px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    margin: 16px 0;
+    color: #59b88c;
+    left: 85px;
+    top: 50px;
+    font-size: 40px;
+  }
+  button {
+    color: #fff;
+    background-color: #59b88c;
+    width: 230px;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+  }
+  .sign-in {
+    top: 230px;
+    left: 75px;
+  }
+  .sign-up {
+    top: 290px;
+    left: 75px;
+  }
+}
+.slide-content-lg-sp {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.slide-content {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+
+  img {
+    width: 60%;
+    max-width: 250px;
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin: 16px 0;
+    color: #59b88c;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: #59b88c;
+  }
+  .box-image {
+    width: 50%;
+    margin-top: 30px;
+  }
+}

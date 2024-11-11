@@ -1,0 +1,62 @@
+<ion-content>
+  <div class="div-img"></div>
+  <swiper-container
+    class="books-slider"
+    [autoplay]="{ 'delay': 3000, 'disableOnInteraction': false }"
+    [slidesPerView]="3"
+  >
+    <ng-container *ngFor="let books of bookImages">
+      <swiper-slide>
+        <div class="slide-content">
+          <img src="{{books}}" class="bookImage" alt="Discounted Books" />
+        </div>
+      </swiper-slide>
+    </ng-container>
+  </swiper-container>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, architecto
+    voluptate unde soluta culpa veniam officiis veritatis assumenda, aliquid
+    harum a, ad corrupti blanditiis deserunt fugit. Minima vero deleniti
+    voluptatum nemo aspernatur repellat dolor, aliquid sapiente deserunt quaerat
+    corrupti error, rem ducimus ipsam necessitatibus dolore eligendi mollitia
+    eaque alias molestias debitis numquam dolorum? Magnam voluptatem placeat
+    sapiente facilis alias itaque vel! Sint obcaecati praesentium soluta earum
+    deserunt itaque maxime modi architecto. Enim ad laborum rerum magni
+    architecto minus sequi. Quia iure architecto, quaerat itaque ex sequi
+    adipisci consequuntur ab voluptatum, similique exercitationem, excepturi
+    ratione. Doloribus odit dolor fuga. Laborum, consequatur mollitia corrupti
+    dignissimos consectetur officiis qui eius minus ab, sequi provident soluta
+    iure? Deserunt expedita magni, dolor nostrum quis fugiat facilis iure
+    praesentium, rem perferendis esse consequatur molestias excepturi sint fuga.
+    Quos suscipit maiores optio corporis distinctio explicabo culpa recusandae
+    voluptates error quaerat voluptate unde, ad natus modi dolor accusantium
+    fuga repellat laboriosam ipsam numquam incidunt perspiciatis. Quod
+    aspernatur repellendus possimus. Officiis totam nulla, consectetur,
+    molestias officia, amet cupiditate recusandae veritatis aliquid vitae veniam
+    nam eaque aliquam commodi. Eveniet, quisquam neque commodi quo consectetur
+    incidunt architecto facilis voluptas laboriosam, sapiente voluptatem
+    asperiores nam explicabo sequi corporis iusto unde sit libero.
+  </p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="footer-buttons">
+      <ion-button routerLink="/dashboard">
+        <ion-icon name="home-outline"></ion-icon>
+        <!-- <ion-label>Home</ion-label> -->
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+        <!-- <ion-label>Search</ion-label> -->
+      </ion-button>
+
+      <!-- Profile Icon -->
+      <ion-button>
+        <ion-icon name="person-outline"></ion-icon>
+        <!-- <ion-label>Profile</ion-label> -->
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

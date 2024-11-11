@@ -1,0 +1,175 @@
+.div-img {
+  // border: 2px solid yellow;
+  position: relative;
+  top: -50px;
+  background-image: url("/assets/img/dashboar-bg.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  h2 {
+    position: absolute;
+    font-size: 1.8rem;
+    left: 20px;
+    top: 100px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+// // Define general styles for the main content area
+// ion-content {
+//   --background: #f4f5f8; // Light gray background for the main content
+//   padding: 16px; // Add some padding for spacing
+// }
+
+// .div-img {
+//   text-align: center; // Center-aligns content inside div-img
+//   padding: 20px; // Adds padding around the content
+//   background-color: #ffffff; // White background for contrast
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Light shadow for elevation
+//   border-radius: 8px; // Rounded corners
+
+//   h2 {
+//     font-size: 1.5rem;
+//     color: #333; // Dark text color for visibility
+//     margin-bottom: 16px; // Adds space below the heading
+//   }
+// }
+// .wrapper {
+//   height: 200px;
+//   width: 100%;
+//   border: 2px solid aqua;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+#main-content {
+  display: flex;
+  justify-content: flex-end; // Positions the menu button to the end (right side)
+  align-items: center;
+  --color: #fff;
+}
+.ion-page {
+  margin-left: 320px;
+  margin-top: 118px;
+  height: 13%;
+  width: 10%;
+  // border: 1px solid red;
+}
+
+// Styling for the menu
+ion-menu {
+  --width: 250px; // Set the width of the side menu
+  background-color: #f9fafb; // Light background for the menu
+}
+
+ion-menu ion-content {
+  padding: 20px;
+  color: #333;
+  font-size: 1rem;
+}
+
+ion-menu-button {
+  --color: #fff;
+  --button-size: 80px;
+}
+.books-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+  position: absolute;
+  // border: 2px solid red;
+  height: 210px;
+  width: 100%;
+  .slide-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    // border: 1px solid aqua;
+    padding: 10px;
+  }
+  .slide-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .bookImage {
+    height: 150px;
+    width: 100px;
+  }
+  h2 {
+    margin: 5px 0px 0px 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  p {
+    margin: 5px 0px 0px 5px;
+    font-size: 0.5rem;
+  }
+}
+.fam-section {
+  margin-top: 100px;
+  // border: 1px solid;
+  h1 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .books-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 430px;
+    position: absolute;
+    // border: 2px solid red;
+    height: 210px;
+    width: 100%;
+    .slide-content {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      // border: 1px solid aqua;
+      padding: 10px;
+    }
+    .slide-content:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .bookImage {
+      height: 150px;
+      width: 100px;
+    }
+    h2 {
+      margin: 5px 0px 0px 5px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// Footer sections
+ion-footer {
+  .footer-buttons {
+    justify-content: space-around;
+    width: 100%;
+  }
+  ion-toolbar {
+    height: 45px;
+    --background: #59b88c;
+  }
+
+  ion-button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  ion-icon {
+    // margin-top: 0px;
+    color: #fff;
+    font-size: 25px;
+  }
+  ion-label {
+    color: #fff;
+  }
+}

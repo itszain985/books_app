@@ -1,0 +1,49 @@
+<ion-buttons slot="start">
+  <ion-back-button
+    style="color: #59b88c"
+    defaultHref="/splash-screen"
+  ></ion-back-button>
+</ion-buttons>
+
+<h1>Sign In</h1>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onLogin()">
+    <ion-item>
+      <!-- <ion-label position="floating">Email</ion-label> -->
+      <ion-input
+        placeholder="Email"
+        type="email"
+        required
+        [(ngModel)]="email"
+        name="email"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <!-- <ion-label position="floating">Mobile Phone</ion-label> -->
+      <ion-input
+        placeholder="Mobile Phone"
+        type="text"
+        required
+        [(ngModel)]="password"
+        name="password"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox
+        [(ngModel)]="acceptTerms"
+        name="acceptTerms"
+        required
+      ></ion-checkbox>
+      <p>Please accept the terms and conditions</p>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Sign Up</ion-button>
+  </form>
+
+  <ion-text color="medium">
+    <p>Don’t have an account? <a routerLink="/signup">Sign Up</a></p>
+  </ion-text>
+</ion-content>
