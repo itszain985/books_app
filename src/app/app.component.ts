@@ -16,8 +16,9 @@ export class AppComponent {
 
   initialization() {
     this.plateform.ready().then(() => {
-      this.router.navigateByUrl('splash-screen');
-      // this.router.navigateByUrl('book-detail');
+      // this.router.navigateByUrl('splash-screen');
+      // this.router.navigateByUrl('search-book');
+      this.router.navigateByUrl('dashboard');
     });
   }
 }

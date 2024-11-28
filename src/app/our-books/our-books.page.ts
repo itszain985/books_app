@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.page.html',
-  styleUrls: ['./dashboard.page.scss'],
+  selector: 'app-our-books',
+  templateUrl: './our-books.page.html',
+  styleUrls: ['./our-books.page.scss'],
 })
-export class DashboardPage implements OnInit {
+export class OurBooksPage implements OnInit {
+
   public data = [
     {
       bookImg: '/assets/img/1.jpg',
@@ -111,19 +111,11 @@ export class DashboardPage implements OnInit {
       authName: 'Michael Rosen',
     },
   ];
-  constructor(private router: Router) {}
 
-  ngOnInit() {}
-  // isCenterSlide(index: number): boolean {
-  //   const centerIndex = Math.floor(this.data.length / 2);
-  //   return index === centerIndex;
-  // }
-  clickSearch(){
-    console.log('click')
-    this.router.navigate(['/search-book']);
+  public allBooks = [...this.data, ...this.data2]; 
+  constructor() { }
+
+  ngOnInit() {
   }
-  logout() {
-    this.router.navigate(['/login']);
-  }
-  
+
 }
