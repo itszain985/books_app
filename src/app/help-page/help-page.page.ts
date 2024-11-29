@@ -12,4 +12,5 @@ export class HelpPagePage implements OnInit {
   ngOnInit() {
   }
 
+  email :any = 'support@gmail.com'
 }
